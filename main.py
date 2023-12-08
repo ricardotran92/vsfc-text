@@ -24,4 +24,7 @@ if txt != '':
     feature_vector = encoder.transform([txt])
     label = str((model.predict(feature_vector))[0])
 
+    st.header('Result')
+    st.text(class_list[label])
+
 
